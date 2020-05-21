@@ -33,7 +33,7 @@ def get_all(max_page):
         r = requests.get(url, headers=header)
         #print(url)
         selector_list.append(etree.HTML(r.text, etree.HTMLParser()))
-        print(r.text)
+        #print(r.text)
 
     """根据每一页的选择器和每一行的xPATH提取data"""
     for each_selector in selector_list:
